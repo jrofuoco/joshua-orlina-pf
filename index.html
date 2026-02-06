@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua R. Orlina | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <nav id="navbar" class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-teal-400">
+                    <span class="text-3xl">JO</span>
+                </div>
+                <div class="nav-desktop hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-teal-400 transition-colors">Home</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-teal-400 transition-colors">About</a>
+                    <a href="#projects" class="nav-link text-gray-300 hover:text-teal-400 transition-colors">Projects</a>
+                    <a href="#skills" class="nav-link text-gray-300 hover:text-teal-400 transition-colors">Skills</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-teal-400 transition-colors">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-teal-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Home</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">About</a>
+                <a href="#projects" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Projects</a>
+                <a href="#skills" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Skills</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-teal-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span class="text-gray-100">Hi, I'm</span>
+                    <span class="text-teal-400 block">Joshua R. Orlina</span>
+                </h1>
+                <div class="text-2xl md:text-3xl text-gray-400 mb-8 h-12">
+                    <span id="typing-text"></span>
+                    <span class="blinking-cursor border-r-2 border-teal-400"></span>
+                </div>
+                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Passionate about creating exceptional digital experiences through clean code and thoughtful design.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects" class="px-8 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="px-8 py-3 border border-teal-400 text-teal-400 rounded-lg hover:bg-teal-400 hover:text-gray-900 transition-colors">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-teal-400">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div class="flex justify-center">
+                    <div class="w-64 h-64 bg-gray-700 rounded-full overflow-hidden">
+                        <img src="img/joshua-profile.png" alt="Joshua R. Orlina" class="profile-img">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-100">Joshua R. Orlina</h3>
+                    <p class="text-gray-400 mb-6">
+                        I'm a passionate Full Stack Developer with expertise in modern web technologies. 
+                        I love building responsive, user-friendly applications that solve real-world problems.
+                    </p>
+                    <p class="text-gray-400 mb-6">
+                        With a strong foundation in both frontend and backend development, 
+                        I bring ideas to life through clean, efficient code and thoughtful design.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">Full-Stack Developer</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">Android Developer</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">Problem Solver</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">Learn Quickly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-teal-400">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <div class="text-gray-600 text-4xl">
+                            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Water Meter Management System</h3>
+                        <p class="text-gray-400 mb-4">A system designed to record and manage monthly water meter readings, calculate consumption, and generate billing charges.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Native Java</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Scene Builder</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Java Swing</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Android Studio</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">PostgreSQL</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Supabase</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Roboflow</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Machine Vision</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <div class="text-gray-600 text-4xl">
+                            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Audit Portal</h3>
+                        <p class="text-gray-400 mb-4">A web-based portal to streamline audit processes, allowing real-time submission, review, and tracking of audit records.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">PHP</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Laravel</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">MySQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <div class="text-gray-600 text-4xl">
+                            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">PLSPCart – E-Commerce Platform</h3>
+                        <p class="text-gray-400 mb-4">An e-commerce platform built to support online product browsing, ordering, and checkout. It includes product listings, cart management, and order processing.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">PHP</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">MySQL</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">JavaScript</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <div class="text-gray-600 text-4xl">
+                            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">SciLab Reservation System</h3>
+                        <p class="text-gray-400 mb-4">A reservation system created to manage bookings for a science laboratory. It allows users to reserve time slots and prevents scheduling conflicts.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">PHP</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">MySQL</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Bootstrap</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <div class="text-gray-600 text-4xl">
+                            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Kids E – English Learning Game</h3>
+                        <p class="text-gray-400 mb-4">An educational game helping kids learn basic English through interactive activities focused on vocabulary and spelling.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">JavaScript</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">HTML5</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">CSS3</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <div class="text-gray-600 text-4xl">
+                            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-100">Gym Guide Mobile Application</h3>
+                        <p class="text-gray-400 mb-4">A mobile application that provides workout guides, exercise instructions, and fitness routines. Helps users follow structured workout plans and maintain consistent fitness routines.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">React Native</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Firebase</span>
+                            <span class="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded">Node.js</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="py-20 bg-gray-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-teal-400">Technical Skills</h2>
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="mb-12">
+                    <h3 class="text-xl font-bold mb-6 text-gray-100">Programming & Frameworks</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">PHP (Laravel, Jetstream)</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">Java</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">HTML5</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">CSS</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">C++</span>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h3 class="text-xl font-bold mb-6 text-gray-100">Databases & Tools</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">MySQL</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">Supabase</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">SQL Server</span>
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">SQL SMS</span>
+                    </div>
+                </div>
+                <div class="mb-12">
+                    <h3 class="text-xl font-bold mb-6 text-gray-100">Operating Systems</h3>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="px-3 py-1 bg-teal-500/20 text-teal-400 rounded-full text-sm">Ubuntu LTS</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-gray-100">Development Knowledge</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-teal-500 hover:text-white transition-colors">REST APIs</span>
+                        <span class="px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-teal-500 hover:text-white transition-colors">Git version control</span>
+                        <span class="px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-teal-500 hover:text-white transition-colors">Responsive design</span>
+                        <span class="px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-teal-500 hover:text-white transition-colors">Debugging</span>
+                        <span class="px-4 py-2 bg-gray-700 text-gray-300 rounded-lg hover:bg-teal-500 hover:text-white transition-colors">Agile methodology</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-teal-400">Get In Touch</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-gray-100">Let's Connect</h3>
+                        <p class="text-gray-400 mb-8">
+                            I'm always interested in hearing about new projects and opportunities. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-teal-500/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-gray-300">Phone</p>
+                                    <p class="text-teal-400">09944200973 | 09961175012</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-teal-500/20 rounded-lg flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-gray-300">Location</p>
+                                    <p class="text-teal-400">Brgy Nagcarlan, Laguna, Philippines</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-300 mb-2">Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-teal-400 transition-colors">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-300 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-teal-400 transition-colors">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-gray-300 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" required
+                                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-teal-400 transition-colors" placeholder="What's this about?">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-300 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-teal-400 transition-colors resize-none"></textarea>
+                            </div>
+                            <button type="submit" 
+                                class="w-full px-8 py-3 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="mt-16 text-center">
+                    <h3 class="text-xl font-bold mb-6 text-gray-100">Follow Me</h3>
+                    <div class="flex justify-center gap-6">
+                        <a href="https://github.com/jrofuoco" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-teal-500 transition-colors">
+                            <svg class="w-6 h-6 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/FuocoW" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-teal-500 transition-colors">
+                            <svg class="w-6 h-6 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M20 10a10 10 0 10-11.59 9.9c.36.006.718 0 1.07 0a10 10 0 0010.52-9.9zM9.045 15.584V11.73H7.589v-1.37h1.456V8.977c0-1.442.86-2.228 2.168-2.228.616 0 1.147.046 1.301.067v1.508h-.894c-.7 0-.835.334-.835.823v1.077h1.668l-.217 1.37h-1.45v3.854h-1.751z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joshua-orlina-549862363/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-teal-500 transition-colors">
+                            <svg class="w-6 h-6 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-8 bg-gray-800/50 border-t border-gray-700">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">
+                &copy; 2024 Joshua R. Orlina. All rights reserved. Built with 
+                <span class="text-teal-400">&hearts;</span> and lots of <span class="text-teal-400">coffee</span>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
