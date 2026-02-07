@@ -87,6 +87,7 @@ body {
 .mb-16 { margin-bottom: 4rem; }
 .mt-4 { margin-top: 1rem; }
 .mt-6 { margin-top: 1.5rem; }
+.mt-auto { margin-top: auto; }
 .mt-12 { margin-top: 3rem; }
 .mt-16 { margin-top: 4rem; }
 
@@ -99,10 +100,13 @@ body {
 .flex-col { flex-direction: column; }
 .flex-row { flex-direction: row; }
 .flex-wrap { flex-wrap: wrap; }
+.flex-grow { flex-grow: 1; }
+.flex-shrink-0 { flex-shrink: 0; }
 
 .items-center { align-items: center; }
 .items-start { align-items: flex-start; }
 .justify-center { justify-content: center; }
+.justify-start { justify-content: flex-start; }
 .justify-between { justify-content: space-between; }
 
 .gap-2 { gap: 0.5rem; }
@@ -124,6 +128,8 @@ body {
 .z-50 { z-index: 50; }
 
 .w-full { width: 100%; }
+.w-3 { width: 0.75rem; }
+.w-4 { width: 1rem; }
 .w-6 { width: 1.5rem; }
 .w-12 { width: 3rem; }
 .w-16 { width: 4rem; }
@@ -131,11 +137,15 @@ body {
 .w-64 { width: 16rem; }
 
 .h-2 { height: 0.5rem; }
+.h-3 { height: 0.75rem; }
 .h-6 { height: 1.5rem; }
 .h-12 { height: 3rem; }
 .h-16 { height: 4rem; }
+.h-4 { height: 1rem; }
 .h-32 { height: 8rem; }
+.h-40 { height: 10rem; }
 .h-48 { height: 12rem; }
+.h-56 { height: 14rem; }
 .h-64 { height: 16rem; }
 
 .h-screen { height: 100vh; }
@@ -186,6 +196,7 @@ body {
 
 .text-center { text-align: center; }
 .text-left { text-align: left; }
+.text-wrap { white-space: normal; }
 
 .overflow-hidden { overflow: hidden; }
 .resize-none { resize: none; }
@@ -339,7 +350,17 @@ body {
     left: 100%;
 }
 
+/* Repo button: always bottom-left, text wraps inside */
+.project-card .repo-btn-wrap {
+    margin-top: auto;
+    justify-content: flex-start;
+}
 
+.project-card .repo-btn-wrap .repo-btn {
+    flex-wrap: wrap;
+    text-align: left;
+    white-space: normal;
+}
 
 .skill-item .bg-teal-400 {
     transition: width 1s ease-in-out;
